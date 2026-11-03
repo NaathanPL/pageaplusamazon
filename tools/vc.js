@@ -14,6 +14,7 @@ window.__dump=()=>__ord().map((e,i)=>i+':'+(e.value||e.innerText||'').trim().sli
 window.__titles=T=>{const set=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set,o=__ord();for(const k in T){const e=o[k];set.call(e,T[k]);['input','change'].forEach(t=>e.dispatchEvent(new Event(t,{bubbles:true,composed:true})))}};
 // corps (contenteditable) : __f(i) puis action computer type (clavier) ; __ins(i,txt) = essai execCommand (à valider)
 window.__f=i=>{const e=__ord()[i];e.scrollIntoView({block:'center'});e.focus();getSelection().selectAllChildren(e);return i};
+// __ins : NE PAS UTILISER (casse le module : "Erreur de rendu de l'éditeur"). Corps = __f(i) puis action clavier type.
 window.__ins=(i,t)=>{__f(i);document.execCommand('insertText',false,t);return __ord()[i].innerText.trim()==t.trim()};
 // supprimer un module par son nom (confirme "Oui")
 window.__del=async name=>{const h=__mods().find(e=>e.textContent.trim().startsWith(name));if(!h)return 'absent';h.scrollIntoView({block:'start'});await __sleep(300);const y=h.getBoundingClientRect().top;
@@ -32,3 +33,14 @@ window.__up=async(i,url)=>{const b=__imgBtns()[i];b.scrollIntoView({block:'cente
  const dt=new DataTransfer();dt.items.add(f);for(const t of ['dragenter','dragover','drop'])p.dispatchEvent(new DragEvent(t,{bubbles:true,cancelable:true,composed:true,dataTransfer:dt}));
  for(let k=0;k<20&&/Chargement/.test(deep('kat-modal').map(m=>m.innerText).join(''));k++)await __sleep(500);await __sleep(800);
  const ok=deep('kat-button').find(e=>(e.getAttribute('label')||e.textContent||'').trim()=='Ajouter'&&e.getBoundingClientRect().width>0);if(!ok)return 'pas de bouton Ajouter';__click(ok);await __sleep(1500);return 'ok '+i};
+// Emplacements vides ("Cliquez pour ajouter une image") dans l'ordre ; __upE(url) remplit le premier vide (attend la fin du chargement puis Ajouter).
+window.__slots=()=>{const sy=scrollY;return deep('*').filter(e=>e.childElementCount==0&&/Cliquez pour ajouter une image/.test(e.textContent||'')&&e.getBoundingClientRect().width>0).map(e=>({e,y:Math.round(e.getBoundingClientRect().top+sy),x:e.getBoundingClientRect().left})).sort((a,b)=>a.y-b.y||a.x-b.x).map(o=>o.e)};
+window.__drop=async(url)=>{const f=new File([await (await fetch(url)).blob()],url.split('/').pop(),{type:'image/jpeg'});
+ const p=deep('p').find(e=>/Faites glisser/.test(e.textContent)&&e.getBoundingClientRect().width>0);if(!p)return false;
+ const dt=new DataTransfer();dt.items.add(f);for(const t of ['dragenter','dragover','drop'])p.dispatchEvent(new DragEvent(t,{bubbles:true,cancelable:true,composed:true,dataTransfer:dt}));
+ for(let k=0;k<40;k++){await __sleep(500);const m=deep('kat-modal').find(m=>m.hasAttribute('visible'));if(!m)return true;if(/Chargement/.test(m.innerText))continue;
+  const ok=deep('kat-button').find(e=>/^Ajouter$/.test((e.getAttribute('label')||e.textContent||'').trim())&&e.getBoundingClientRect().width>0);if(ok&&!ok.hasAttribute('disabled')){__click(ok);await __sleep(1200)}}
+ return !deep('kat-modal').some(m=>m.hasAttribute('visible'))};
+window.__upE=async(url)=>{const s=__slots()[0];if(!s)return 'aucun vide';s.scrollIntoView({block:'center'});await __sleep(300);s.click();await __sleep(1500);return (await __drop(url))?'ok':'MODALE OUVERTE'};
+// remplacer l'image d'un emplacement déjà rempli : __upM(i,url) (i = index __imgBtns)
+window.__upM=async(i,url)=>{const b=__imgBtns()[i];b.scrollIntoView({block:'center'});await __sleep(300);__click(b);await __sleep(1500);return (await __drop(url))?'ok':'MODALE OUVERTE'};
