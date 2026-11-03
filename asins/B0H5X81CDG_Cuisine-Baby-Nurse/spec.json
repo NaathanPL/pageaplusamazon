@@ -1,0 +1,9 @@
+{"asin":"B0H5X81CDG","sku":"7600220501","name":"Cuisine Baby Nurse","content_id":"27024b9b-f068-454f-a1c4-0382fb76f9b4",
+ "drive_dir":"/home/claude/drive/7600220501",
+ "files":{"01":"7600220501_01_ig_Smoby_BabyNurse.jpeg","03":"7600220501_03_ig_Smoby_BabyNurse.jpeg","04":"7600220501_04_ig_Smoby_BabyNurse.jpeg","05":"7600220501_05_ig_Smoby_BabyNurse.jpeg","06":"7600220501_06_ig_Smoby_BabyNurse.jpeg","L04":"7600220501_04_Lifestyle_Smoby_BabyNurse.jpeg","L05":"7600220501_05_Lifestyle_Smoby_BabyNurse.jpeg","L09":"7600220501_09_Lifestyle_Smoby_BabyNurse.jpeg"},
+ "zooms":[{"src":"L04","crop":[350,560,1080,1293],"text":"Plaque de cuisson\net casserole"},{"src":"L05","crop":[700,150,1500,950],"text":"Égouttoir\nà assiette"},{"src":"05","crop":[350,550,1150,1350],"text":"Four à porte\nqui s'ouvre"},{"src":"04","crop":[400,400,1100,1100],"text":"Horloge\nà aiguilles"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"42,5 × 22,5 × 40 cm"},
+ "feature":{"name":"RepasPoupon","src":"L09","crop":[300,250,1500,1132],"fill":true,"c":[0.5,0.5],"text":"Le repas du poupon"},
+ "contents":{"src":"03","text":"6 accessoires inclus"},
+ "hero":{"pill":"Cuisine Baby Nurse","title":"Une cuisine pour nourrir son poupon","subtitle":"Four · Plaque · Évier · 6 accessoires","badges":["18 MOIS+","6 ACCESSOIRES","FABRIQUÉ EN FRANCE"]}}
