@@ -1,0 +1,9 @@
+{"asin":"B0H5WTGCTW","sku":"7600311800","name":"Cuisine Vanille","content_id":"dba40302-de39-46f9-8928-251415152c63",
+ "drive_dir":"/home/claude/drive/7600311800",
+ "files":{"01":"7600311800_01_ig_Smoby_RolePlay_Kitchen..jpeg","03":"clean_03.jpeg","05":"7600311800_05_ig_Smoby_RolePlay_Kitchen..jpeg","06":"7600311800_06_ig_Smoby_RolePlay_Kitchen..jpeg","L04":"7600311800_04_Lifestyle_RolePlay_Kitchen.jpeg","L05":"7600311800_05_Lifestyle_RolePlay_Kitchen.jpeg","L06":"7600311800_06_Lifestyle_RolePlay_Kitchen.jpeg"},
+ "zooms":[{"src":"L06","crop":[300,300,1100,1100],"text":"Plaque cric-crac\net poêle"},{"src":"01","crop":[380,0,1180,800],"text":"Crédence\nde rangement"},{"src":"05","crop":[300,300,1100,1100],"text":"Évier\net robinet"},{"src":"L05","crop":[500,150,1300,950],"text":"Moulin\nsel et poivre"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"48 × 28 × 73 cm"},
+ "feature":{"name":"PremiersJeux","src":"L04","crop":[0,0,1500,1267],"fill":true,"c":[0.5,0.5],"text":"La cuisine des premiers jeux"},
+ "contents":{"src":"03","crop":[0,150,1500,1500],"text":"11 accessoires inclus"},
+ "hero":{"pill":"Cuisine Vanille","title":"La cuisine des premiers petits chefs","subtitle":"Four · Plaque cric-crac · Évier · 11 accessoires","badges":["3+ ANS","11 ACCESSOIRES","FABRIQUÉ EN FRANCE"]}}
