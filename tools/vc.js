@@ -38,11 +38,14 @@ window.__slots=()=>{const sy=scrollY;return deep('*').filter(e=>e.childElementCo
 window.__drop=async(url)=>{const f=new File([await (await fetch(url)).blob()],url.split('/').pop(),{type:'image/jpeg'});
  let p=deep('p').find(e=>/Faites glisser/.test(e.textContent)&&e.getBoundingClientRect().width>0);
  if(!p){const x=deep('span').find(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.width<30&&r.left>0&&/^(x|×)$/i.test(e.textContent.trim())});if(x){x.click();await __sleep(800)}p=deep('p').find(e=>/Faites glisser/.test(e.textContent)&&e.getBoundingClientRect().width>0)}
+ if(!p){const m=deep('kat-modal').find(m=>m.hasAttribute('visible'));p=m&&deep('canvas',m).find(c=>c.getBoundingClientRect().width>100)}
  if(!p)return false;
  const dt=new DataTransfer();dt.items.add(f);for(const t of ['dragenter','dragover','drop'])p.dispatchEvent(new DragEvent(t,{bubbles:true,cancelable:true,composed:true,dataTransfer:dt}));
  for(let k=0;k<40;k++){await __sleep(500);const m=deep('kat-modal').find(m=>m.hasAttribute('visible'));if(!m)return true;if(/Chargement/.test(m.innerText))continue;
   const ok=deep('kat-button').find(e=>/^Ajouter$/.test((e.getAttribute('label')||e.textContent||'').trim())&&e.getBoundingClientRect().width>0);if(ok&&!ok.hasAttribute('disabled')){__click(ok);(ok.shadowRoot?.querySelector('button')||ok).dispatchEvent(new MouseEvent('click',{bubbles:true,composed:true}));await __sleep(1200)}}
  return !deep('kat-modal').some(m=>m.hasAttribute('visible'))};
 window.__upE=async(url)=>{const s=__slots()[0];if(!s)return 'aucun vide';s.scrollIntoView({block:'center'});await __sleep(300);s.click();await __sleep(1500);return (await __drop(url))?'ok':'MODALE OUVERTE'};
+// Si 'MODALE OUVERTE' : l'image est chargée mais le clic script sur Ajouter n'a pas pris -> find('Ajouter') puis clic computer sur la ref du bouton.
+// Hero : la modale est un recadreur (canvas) ; le drop se fait sur le canvas.
 // remplacer l'image d'un emplacement déjà rempli : __upM(i,url) (i = index __imgBtns)
 window.__upM=async(i,url)=>{const b=__imgBtns()[i];b.scrollIntoView({block:'center'});await __sleep(300);__click(b);await __sleep(1500);return (await __drop(url))?'ok':'MODALE OUVERTE'};
