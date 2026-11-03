@@ -1,0 +1,9 @@
+{"asin":"B0H5XFQXQD","sku":"7600330226","name":"Rowenta X-Clean 4","content_id":"08fad070-d66f-4a9e-a806-11bb049baeb3",
+ "drive_dir":"/home/claude/drive/7600330226",
+ "files":{"01":"7600330226_01_ig_Smoby_Roleplay_Cleaning.jpeg","02":"7600330226_02_ig_Smoby_Roleplay_Cleaning.jpeg","03":"7600330226_03_ig_Smoby_Roleplay_Cleaning.jpeg","04":"7600330226_04_ig_Smoby_Roleplay_Cleaning.jpeg","05":"7600330226_05_ig_Smoby_Roleplay_Cleaning.jpeg","06":"7600330226_06_ig_Smoby_Roleplay_Cleaning.jpeg"},
+ "zooms":[{"src":"03","crop":[150,350,1150,1350],"text":"Effets sons\net lumières"},{"src":"04","crop":[350,700,1150,1500],"text":"Rouleau\nqui tourne"},{"src":"02","crop":[0,720,620,1340],"text":"Comme l'aspirateur\ndes parents"},{"src":"01","crop":[450,550,1050,1150],"text":"Réplique\nRowenta"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"Hauteur 76 cm"},
+ "feature":{"name":"MenageGrands","src":"04","crop":[0,0,1500,1500],"fill":true,"c":[0.5,0.4],"text":"Le ménage comme les grands"},
+ "contents":{"src":"05","crop":[0,100,1500,1500],"text":"Jouet d'imitation dès 3 ans"},
+ "hero":{"pill":"Rowenta X-Clean 4","title":"Un aspirateur laveur comme celui des grands","subtitle":"Sons et lumières · Rouleau qui tourne","badges":["3+ ANS","SONS ET LUMIÈRES","FABRIQUÉ EN FRANCE"]}}
