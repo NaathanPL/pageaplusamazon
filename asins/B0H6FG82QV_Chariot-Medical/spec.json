@@ -1,0 +1,9 @@
+{"asin":"B0H6FG82QV","sku":"7600340209","name":"Chariot Médical Électronique","content_id":"10dc93a8-3497-41f1-bab6-8c974d2e9b1d",
+ "drive_dir":"/home/claude/drive/7600340209",
+ "files":{"01":"7600340209_01_ig_Smoby_Medical.jpeg","03":"7600340209_03_ig_Smoby_Medical.jpeg","05":"7600340209_05_ig_Smoby_Medical.jpeg","06":"7600340209_06_ig_Smoby_Medical.jpeg","L02":"7600340209_Lifestyle_02_Smoby_Roleplay_Medical.jpeg","L07":"7600340209_Lifestyle_07_Smoby_Roleplay_Medical.jpeg","L08":"7600340209_Lifestyle_08_Smoby_Roleplay_Medical.jpeg"},
+ "zooms":[{"src":"01","crop":[450,0,1250,800],"text":"Moniteur sons\net lumières"},{"src":"L07","crop":[150,50,950,850],"text":"Seringue\nde docteur"},{"src":"L08","crop":[400,0,1200,800],"text":"Thermomètre\nmécanique"},{"src":"05","crop":[450,150,1300,1000],"text":"Stéthoscope\nde médecin"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"26 × 30 × 64 cm"},
+ "feature":{"name":"CabinetMedical","src":"L02","crop":[0,0,1500,1304],"fill":true,"c":[0.6,0.4],"text":"Le cabinet du docteur"},
+ "contents":{"src":"03","text":"12 accessoires inclus"},
+ "hero":{"pill":"Chariot Médical","title":"Un chariot pour jouer au docteur","subtitle":"Sons et lumières · 12 accessoires","badges":["3+ ANS","SONS ET LUMIÈRES","FABRIQUÉ EN FRANCE"]}}
