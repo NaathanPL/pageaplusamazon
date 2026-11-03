@@ -3,4 +3,4 @@
 - `asins/<ASIN>_<Produit>/` : spec.json, hero.jpg, aplus/ (visuels dans l'ordre d'upload), preview.jpg
 - URL brute d'une image : https://raw.githubusercontent.com/NaathanPL/pageaplusamazon/main/asins/<dir>/aplus/<fichier>
 - Éditeur VC : URL https://vendorcentral.amazon.fr/hz/vendor/members/aplus/content-manager/workflow/emc-standard/content/<id>/revision/<rev>/edit
-- Upload images : `__up(i,url)` dans vc.js (validé). Ne jamais toucher au hero s'il est déjà en place.
+- Upload images : `__up(i,url)` dans vc.js (validé). Ne pas recharger une image identique à celle déjà en place.
