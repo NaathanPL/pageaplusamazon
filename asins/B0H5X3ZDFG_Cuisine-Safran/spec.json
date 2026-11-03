@@ -1,0 +1,9 @@
+{"asin":"B0H5X3ZDFG","sku":"7600311802","name":"Cuisine Safran","content_id":"c6c11ca5-a60b-4086-9b0d-24a9508b6a4d",
+ "drive_dir":"/mnt/user-data/outputs/B0H5X3ZDFG/drive",
+ "files":{"01":"7600311802_01_ig_Smoby_RolePlay_Kitchen.jpeg","03":"7600311802_03_ig_Smoby_RolePlay_Kitchen.jpeg","04":"7600311802_04_ig_Smoby_RolePlay_Kitchen.jpeg","06":"7600311802_06_ig_Smoby_RolePlay_Kitchen.jpeg","L03":"7600311802_03_Lifestyle_RolePlay_Kitchen.jpeg","L06":"7600311802_06_Lifestyle_RolePlay_Kitchen.jpeg","L07":"7600311802_07_Lifestyle_RolePlay_Kitchen.jpeg","L12":"7600311802_12_Lifestyle_RolePlay_Kitchen.jpeg"},
+ "zooms":[{"src":"L07","crop":[420,330,1120,1000],"text":"Plaque électronique\navec sons"},{"src":"L12","crop":[150,250,1350,1430],"text":"Cafetière\nà capsules"},{"src":"L06","crop":[200,100,1300,1200],"text":"Hamburger\nà assembler"},{"src":"L03","crop":[250,250,1500,1402],"text":"Tiroir\nà couverts"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"60 × 30 × 80 cm"},
+ "feature":{"name":"CoinRepas","src":"04","crop":[700,300,1500,1100],"fill":true,"c":[0.6,0.5],"text":"Extension coin repas"},
+ "contents":{"src":"03","crop":[150,250,1350,1270],"text":"24 accessoires inclus"},
+ "hero":{"pill":"Cuisine Safran","title":"Une cuisine avec son coin repas","subtitle":"Four · Plaque électronique · Cafetière · 24 accessoires","badges":["3+ ANS","SONS RÉALISTES","FABRIQUÉ EN FRANCE"]}}
