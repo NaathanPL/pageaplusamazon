@@ -1,0 +1,9 @@
+{"asin":"B0H6WZ384J","sku":"7600320172","name":"Desserte My Hair Style","content_id":"9b8ee34a-29fb-40eb-9d52-3ef2008881bf",
+ "drive_dir":"/home/claude/drive/7600320172",
+ "files":{"01":"7600320172_01_ig_Smoby_Roleplay_Hairstyle.jpeg","03":"7600320172_03_ig_Smoby_Roleplay_Hairstyle.jpeg","04":"7600320172_04_ig_Smoby_Roleplay_Hairstyle.jpeg","05":"7600320172_05_ig_Smoby_Roleplay_Hairstyle.jpeg","06":"7600320172_06_ig_Smoby_Roleplay_Hairstyle.jpeg","L03":"7600320172_03_Lifestyle_Smoby_Roleplay_HairStyle.jpeg","L11":"7600320172_11_Lifestyle_Smoby_Roleplay_HairStyle.jpeg"},
+ "zooms":[{"src":"L03","crop":[250,550,1050,1350],"text":"Sèche-cheveux\nélectronique"},{"src":"04","crop":[400,150,1100,850],"text":"Tondeuse\nmécanique"},{"src":"05","crop":[450,450,1250,1250],"text":"Fiches tuto\ncoiffure"},{"src":"01","crop":[250,350,1250,1350],"text":"Paniers\nde rangement"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"32 × 23 × 54 cm"},
+ "feature":{"name":"SalonMobile","src":"L11","crop":[150,0,1500,1087],"fill":true,"c":[0.5,0.5],"text":"Un salon de coiffure mobile"},
+ "contents":{"src":"03","text":"13 accessoires inclus"},
+ "hero":{"pill":"My Hair Style","title":"Un salon de coiffure sur roulettes","subtitle":"Sèche-cheveux · Tondeuse · 13 accessoires","badges":["3+ ANS","13 ACCESSOIRES","FABRIQUÉ EN FRANCE"]}}
