@@ -1,4 +1,5 @@
 // Helpers Vendor Central A+ : coller le contenu du fichier dans un javascript_exec sur l'onglet VC (éditeur ouvert).
+// RÈGLE : onglet VC au premier plan (tabs_select) ; uploads attendus dans le javascript_exec par lots de 3 (limite 45 s) ; JAMAIS de boucle async non attendue (elle se fige en arrière-plan puis reprend et mélange l ordre).
 window.deep=(sel,root=document)=>{let o=[];const w=r=>{r.querySelectorAll(sel).forEach(e=>o.push(e));r.querySelectorAll('*').forEach(e=>{if(e.shadowRoot)w(e.shadowRoot)})};w(root);return o};
 window.__sleep=ms=>new Promise(r=>setTimeout(r,ms));
 window.__click=e=>(e.shadowRoot?.querySelector('button')||e).click();
