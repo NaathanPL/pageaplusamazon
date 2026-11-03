@@ -23,7 +23,12 @@ window.__del=async name=>{const h=__mods().find(e=>e.textContent.trim().startsWi
 window.__add=async n=>{scrollTo(0,document.body.scrollHeight);await __sleep(500);const s=deep('span').find(e=>e.textContent.trim()=='Ajouter un module');s.click();await __sleep(1500);
  let h=deep('h6').find(e=>e.textContent.trim()==n);if(!h){s.parentElement.click();await __sleep(1500);h=deep('h6').find(e=>e.textContent.trim()==n)}h.click();await __sleep(1500);return __mods().map(e=>e.textContent.trim())};
 window.__draft=async()=>{__click(__btn(/brouillon/i));await __sleep(5000);return deep('kat-alert,[role=alert]').map(a=>(a.getAttribute('description')||a.textContent||'').trim().slice(0,100))};
-// NON TESTÉ : charger une image depuis une URL (repo GitHub raw) dans un input file visible (après ouverture du dialogue d'upload)
-window.__upload=async(url,name)=>{const b=await (await fetch(url)).blob();const f=new File([b],name||url.split('/').pop(),{type:b.type||'image/jpeg'});
- const inp=deep('input[type=file]');if(!inp.length)return 'pas d input file';const dt=new DataTransfer();dt.items.add(f);const i=inp[inp.length-1];i.files=dt.files;
- i.dispatchEvent(new Event('change',{bubbles:true,composed:true}));return 'ok '+f.size+' '+inp.length+' inputs'};
+// UPLOAD (validé 03/11/2026 sur Safran) : drop synthétique dans la modale, sans retirer l'ancienne image, puis "Ajouter".
+// __imgBtns() : boutons "Modifier" des images dans l'ordre (0 hero, 1-4 M2, 5 M3, 6-8 M4). __up(i,url) : remplace l'image i.
+window.__imgBtns=()=>{const sy=scrollY;return deep('kat-button').filter(e=>(e.getAttribute('label')||e.textContent||'').trim()=='Modifier').map(e=>({e,y:Math.round(e.getBoundingClientRect().top+sy),x:e.getBoundingClientRect().left})).sort((a,b)=>a.y-b.y||a.x-b.x).map(o=>o.e)};
+window.__up=async(i,url)=>{const b=__imgBtns()[i];b.scrollIntoView({block:'center'});await __sleep(300);__click(b);await __sleep(1500);
+ const f=new File([await (await fetch(url)).blob()],url.split('/').pop(),{type:'image/jpeg'});
+ const p=deep('p').find(e=>/Faites glisser/.test(e.textContent));if(!p)return 'pas de zone de dépôt';
+ const dt=new DataTransfer();dt.items.add(f);for(const t of ['dragenter','dragover','drop'])p.dispatchEvent(new DragEvent(t,{bubbles:true,cancelable:true,composed:true,dataTransfer:dt}));
+ for(let k=0;k<20&&/Chargement/.test(deep('kat-modal').map(m=>m.innerText).join(''));k++)await __sleep(500);await __sleep(800);
+ const ok=deep('kat-button').find(e=>(e.getAttribute('label')||e.textContent||'').trim()=='Ajouter'&&e.getBoundingClientRect().width>0);if(!ok)return 'pas de bouton Ajouter';__click(ok);await __sleep(1500);return 'ok '+i};
