@@ -1,0 +1,9 @@
+{"asin":"B0GCMGQSXH","sku":"7600810505","name":"Maison Mud Cooking","content_id":"211a3031-b8fa-4a25-82e1-17cace3bb766",
+ "drive_dir":"/home/claude/drive/7600810505",
+ "files":{"01":"7600810505_01_ig_Smoby_Outdoor_SmobyLife.jpeg","03":"7600810505_03_ig_Smoby_Outdoor_SmobyLife.jpeg","06":"7600810505_06_ig_Smoby_Outdoor_SmobyLife.jpeg","L12":"7600810505_12_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg","L17":"7600810505_17_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg","L22":"7600810505_22_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg","L36":"7600810505_36_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg","L40":"7600810505_40_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg"},
+ "zooms":[{"src":"L12","crop":[150,800,1050,1700],"text":"Ardoise\ndu menu du jour"},{"src":"L17","crop":[250,0,1250,1000],"text":"Éléments amovibles\nfaciles à rincer"},{"src":"L22","crop":[0,400,1100,1500],"text":"Tambouilles\nà plusieurs"},{"src":"L40","crop":[200,900,1500,2200],"text":"Louche, bol\net recettes"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"132 cm de haut"},
+ "feature":{"name":"Tambouille","src":"L36","crop":[0,0,1500,1000],"fill":true,"c":[0.5,0.5],"text":"La tambouille au jardin"},
+ "contents":{"src":"03","crop":[150,420,1450,1110],"text":"16 accessoires inclus"},
+ "hero":{"pill":"Mud Cooking House","title":"La cuisine tambouille du jardin","subtitle":"16 accessoires · Éléments amovibles · Anti-UV","badges":["2+ ANS","16 ACCESSOIRES","ANTI-UV"]}}
