@@ -1,0 +1,10 @@
+// Onglet https://drive.google.com/drive/search?q=<SKU> (session Google de Nathan).
+// 1) __driveIds(sku) : liste [id, nom] de toutes les images du SKU (un seul appel, remplace search_files).
+window.__driveIds=async sku=>{await new Promise(r=>setTimeout(r,3000));const sc=[...document.querySelectorAll('*')].filter(e=>e.scrollHeight>e.clientHeight+50&&getComputedStyle(e).overflowY!='visible').sort((a,b)=>b.scrollHeight-a.scrollHeight)[0];
+ const seen=new Map();for(let k=0;k<15;k++){document.querySelectorAll('[data-id]').forEach(e=>{const id=e.getAttribute('data-id');const n=(e.innerText||e.getAttribute('aria-label')||'').match(new RegExp(sku+'[^\\n]*?\\.jpe?g','i'));if(id&&id.length>20&&n)seen.set(id,n[0])});if(sc)sc.scrollTop+=800;await new Promise(r=>setTimeout(r,500))}
+ window.__ids=[...seen].sort((a,b)=>a[1].localeCompare(b[1]));return window.__ids.length};
+// 2) __sheet(sku) : planche plein écran des miniatures étiquetées -> UNE capture d'écran (scale 1) pour choisir images et cadrages.
+window.__sheet=sku=>{document.getElementById('__sheet')?.remove();const d=document.createElement('div');d.id='__sheet';d.style.cssText='position:fixed;inset:0;z-index:999999;background:#fff;display:grid;grid-template-columns:repeat(6,1fr);gap:2px;padding:2px;overflow:hidden';
+ __ids.filter(x=>!/sap/.test(x[1])).forEach(([id,n])=>{const c=document.createElement('div');c.style.cssText='position:relative;aspect-ratio:1;background:#eee';c.innerHTML=`<img src="https://drive.google.com/thumbnail?id=${id}&sz=w300" style="width:100%;height:100%;object-fit:contain"><span style="position:absolute;left:0;top:0;background:#000;color:#fff;font:bold 13px sans-serif;padding:1px 4px">${n.replace(sku+'_','').replace(/_Smoby.*$/,'').replace('Lifestyle_','L')}</span>`;d.appendChild(c)});document.body.appendChild(d);return 'ok'};
+// 3) __pick(['01_ig','Lifestyle_04_',...]) : ids des images retenues -> download_file_content EN PARALLÈLE (un seul message) puis dl.py.
+window.__pick=keys=>{document.getElementById('__sheet')?.remove();return __ids.filter(x=>keys.some(k=>x[1].includes(k))).map(x=>x[1]+' '+x[0])};
