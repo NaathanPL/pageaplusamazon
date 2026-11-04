@@ -1,0 +1,9 @@
+{"asin":"B0H6X18RLD","sku":"7600320174","name":"My Beauty Vanity","content_id":"2fa10ba8-7f12-4904-816e-2bd0547d2710",
+ "drive_dir":"/home/claude/drive/7600320174",
+ "files":{"01":"7600320174_01_ig_Smoby_Roleplay_Beauty.jpeg","03":"7600320174_03_ig_Smoby_Roleplay_Beauty.jpeg","04":"7600320174_04_ig_Smoby_Roleplay_Beauty.jpeg","05":"7600320174_05_ig_Smoby_Roleplay_Beauty.jpeg","06":"7600320174_06_ig_Smoby_Roleplay_Beauty.jpeg","L07":"7600320174_07_Lifestyle_Smoby_Roleplay_Beauty.jpeg","L12":"7600320174_12_Lifestyle_Smoby_Roleplay_Beauty.jpeg","L13":"7600320174_13_Lifestyle_Smoby_Roleplay_Beauty.jpeg","L16":"7600320174_16_Lifestyle_Smoby_Roleplay_Beauty.jpeg"},
+ "zooms":[{"src":"04","crop":[100,50,1400,1350],"text":"Une mallette beauté\nà emporter partout"},{"src":"L16","crop":[100,0,1000,900],"text":"Un vrai miroir\npour se coiffer"},{"src":"L13","crop":[300,0,1299,999],"text":"Vernis et maquillage\nfactices, sans tache"},{"src":"L07","crop":[200,100,1400,1300],"text":"Sèche-cheveux\net accessoires coiffure"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"33 × 28,5 × 26,7 cm"},
+ "feature":{"name":"SeanceBeaute","src":"L12","crop":[0,300,1500,1474],"fill":true,"c":[0.5,0.5],"text":"Séances beauté à la maison"},
+ "contents":{"src":"03","text":"10 accessoires factices"},
+ "hero":{"pill":"My Beauty Vanity","title":"Un vanity pour jouer à la coiffeuse","subtitle":"Coiffure · Onglerie · Maquillage factice","badges":["3+ ANS","VRAI MIROIR","FABRIQUÉ EN FRANCE"]}}
