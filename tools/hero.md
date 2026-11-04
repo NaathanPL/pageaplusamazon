@@ -7,3 +7,5 @@ Référence (hero Maison Aventure) : https://m.media-amazon.com/images/S/aplus-m
 
 Prompt (remplacer les {…}) :
 Crée une bannière Amazon A+ 970x600 dans le style exact de la première image. Panneau gauche crème avec bord en vague ; titre gras marron foncé sur 3 lignes : "{titre}" ; sous-titre vert sur 2 lignes : "{sous-titre}" ; 3 badges ronds : corail "{âge}", blanc cerclé vert "{atout}", blanc cerclé marron "FABRIQUÉ EN FRANCE" avec picto pin (seulement si le pin est sur la boîte) ; pastille vert #2E5541 en haut à droite avec "{nom produit}". Produit de la deuxième image à droite, fidèle, dans une scène réaliste. Pas de boîte, pas de mention recyclé, pas de logo, texte en français sans faute.
+
+Attente : envoyer le prompt hero puis faire le reste de la page ; première vérification à 1 min 40 après l envoi, puis une par minute.
