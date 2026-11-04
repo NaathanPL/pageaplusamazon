@@ -1,0 +1,9 @@
+{"asin":"B0DQVCWJJJ","sku":"7600741503","name":"Tricycle Baby Driver Gris","content_id":"ae659fe1-c045-45cf-88b1-8cbe49bddb60",
+ "drive_dir":"/home/claude/drive/7600741503",
+ "files":{"01":"7600741503_01_ig_Smoby_WheeledToys_Tricycle.jpeg","02":"7600741503_02_ig_Smoby_WheeledToys_Tricycle.jpeg","03":"7600741503_03_ig_Smoby_WheeledToys_Tricycle.jpeg","05":"7600741503_05_ig_Smoby_WheeledToys_Tricycle.jpeg","06":"7600741503_06_ig_Smoby_WheeledToys_Tricycle.jpeg","L01":"7600741503_01_lifestyle_smoby_tricycle.jpeg","L02":"7600741503_02_lifestyle_smoby_tricycle.jpeg","L03":"7600741503_03_lifestyle_smoby_tricycle.jpeg"},
+ "zooms":[{"src":"L01","crop":[250,0,1300,1037],"text":"Il pédale\nen autonomie"},{"src":"L02","crop":[0,0,1128,1128],"text":"Une balade\navec le parent"},{"src":"L03","crop":[0,300,1500,1800],"text":"Poussé par\nses parents"},{"src":"05","crop":[100,100,1400,1400],"text":"Les premiers\ntours de pédales"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"94 à 98 cm de haut"},
+ "feature":{"name":"Capote","src":"02","crop":[0,0,1070,1500],"text":"Capote anti-UV UPF 50+"},
+ "contents":{"src":"03","crop":[0,480,1500,1020],"text":"3 en 1 : dès 10 mois"},
+ "hero":{"pill":"Baby Driver","title":"Le tricycle qui grandit avec lui","subtitle":"3 en 1 dès 10 mois · Capote UPF 50+ · Canne parentale","badges":["10 MOIS+","3 EN 1","FABRIQUÉ EN ESPAGNE"]}}
