@@ -1,0 +1,8 @@
+{"asin":"B0DQVDBN2S","sku":"7600810738","name":"Maison Pretty + Cuisine","content_id":"1fa4c436-781c-4753-b991-84d123011b4f",
+ "drive_dir":"/home/claude/drive/7600810738",
+ "files":{"01":"7600810738_01_ig_Smoby_Outdoor_SmobyLife.jpeg","05":"7600810738_05_ig_Smoby_Outdoor_SmobyLife.jpeg","06":"7600810738_06_ig_Smoby_Outdoor_SmobyLife.jpeg","L01":"7600810738_01_Lifestyle_Smoby_Outdoor.jpeg","L03":"7600810738_03_Lifestyle_Smoby_Outdoor.jpeg","L04":"7600810738_04_Lifestyle_Smoby_Outdoor.jpeg","L06":"7600810738_06_Lifestyle_Smoby_Outdoor.jpeg"},
+ "zooms":[{"src":"L04","crop":[517,0,1500,983],"text":"Plaque grill\net vaisselle"},{"src":"05","crop":[600,250,1500,1150],"text":"Évier avec\nrobinet"},{"src":"L06","crop":[0,750,1500,2249],"text":"Grand espace\nintérieur"},{"src":"L03","crop":[300,0,1307,1007],"text":"Fenêtres à volets\ncoulissants"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"145 × 110 × 127 cm"},
+ "feature":{"name":"CuisineEte","src":"L01","fill":true,"c":[0.5,0.6],"text":"Cuisine d'été en extérieur"},
+ "contents":{"src":"01","crop":[860,760,1420,1320],"text":"Vaisselle et grill inclus"}}
