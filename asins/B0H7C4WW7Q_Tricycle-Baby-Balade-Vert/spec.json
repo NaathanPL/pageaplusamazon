@@ -1,0 +1,9 @@
+{"asin":"B0H7C4WW7Q","sku":"7600741406","name":"Tricycle Baby Balade Vert","content_id":"c0324a71-4f27-4b54-9b9c-c12b41ca6e35",
+ "drive_dir":"/home/claude/drive/7600741406",
+ "files":{"01":"7600741406_01_ig_Smoby_Baby Balade Tricycle Green.jpeg","02":"7600741406_02_ig_Smoby_Baby Balade Tricycle Green.jpeg","03":"7600741406_03_ig_Smoby_Baby Balade Tricycle Green.jpeg","04":"7600741406_04_ig_Smoby_Baby Balade Tricycle Green.jpeg","05":"7600741406_05_ig_Smoby_Baby Balade Tricycle Green.jpeg","06":"7600741406_06_ig_Smoby_Baby Balade Tricycle Green.jpeg","07":"7600741406_07_ig_Smoby_Baby Balade Tricycle Green.jpeg"},
+ "zooms":[{"src":"04","crop":[300,300,1300,1300],"text":"Poignée parentale\nréglable sur 3 hauteurs"},{"src":"07","crop":[150,300,1150,1300],"text":"Pare-soleil anti-UV\norientable à 360°"},{"src":"01","crop":[350,350,1250,1250],"text":"Siège avec harnais\net frein de parking"},{"src":"03","crop":[100,164,1100,1164],"text":"Pneus silencieux et\ngrande benne basculante"}],
+ "packshot":"01",
+ "dims":{"src":"03","text":"68 × 52 × 101 cm"},
+ "feature":{"name":"Autonomie","src":"06","crop":[0,0,1500,1147],"fill":true,"c":[0.5,0.5],"text":"Il évolue avec l'enfant"},
+ "contents":{"src":"02","text":"3 en 1 : poussé, guidé, pédalé"},
+ "hero":{"pill":"Tricycle Baby Balade","title":"Un tricycle qui grandit avec bébé","subtitle":"Évolutif 3 en 1 · Dès 10 mois","badges":["DÈS 10 MOIS","ÉVOLUTIF 3 EN 1"]}}
