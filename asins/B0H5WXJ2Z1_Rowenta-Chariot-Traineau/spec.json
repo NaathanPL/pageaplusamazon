@@ -1,0 +1,9 @@
+{"asin":"B0H5WXJ2Z1","sku":"7600330329","name":"Rowenta Chariot Ménage Aspirateur Traîneau","content_id":"",
+ "drive_dir":"/home/claude/drive/7600330329",
+ "files":{"01":"7600330329_01_ig_Smoby_Roleplay_Cleaning.jpeg","03":"7600330329_03_ig_Smoby_Roleplay_Cleaning.jpeg","04":"7600330329_04_ig_Smoby_Roleplay_Cleaning.jpeg","05":"7600330329_05_ig_Smoby_Roleplay_Cleaning.jpeg","06":"7600330329_06_ig_Smoby_Roleplay_Cleaning.jpeg"},
+ "zooms":[{"src":"04","crop":[400,150,1400,1150],"text":"Le chariot de ménage\ncomme les grands"},{"src":"05","crop":[250,350,1450,1550],"text":"L'aspirateur traîneau\nsuit l'enfant partout"},{"src":"01","crop":[330,150,1130,950],"text":"Seaux et pulvérisateur\nà portée de main"},{"src":"03","crop":[150,100,1450,1400],"text":"Balai, pelle,\nraclette et serpillère"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"32 × 21 × 66 cm"},
+ "feature":{"name":"MenageEnJouant","src":"04","crop":[0,0,1500,1174],"fill":true,"c":[0.5,0.5],"text":"Le ménage en s'amusant"},
+ "contents":{"src":"03","text":"9 accessoires de ménage"},
+ "hero":{"pill":"Chariot Ménage Rowenta","title":"Un chariot pour aider à la maison","subtitle":"Aspirateur traîneau · Sons réalistes · 9 accessoires","badges":["3+ ANS","SONS RÉALISTES","FABRIQUÉ EN FRANCE"]}}
