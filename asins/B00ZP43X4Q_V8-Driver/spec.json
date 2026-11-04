@@ -1,0 +1,8 @@
+{"asin":"B00ZP43X4Q","sku":"7600370206","name":"V8 Driver","content_id":"",
+ "drive_dir":"/home/claude/drive/7600370206",
+ "files":{"PK":"pk.jpeg","L":"01.jpeg"},
+ "zooms":[{"src":"PK","crop":[500,0,980,480],"text":"Volant électronique\nà écran"},{"src":"PK","crop":[680,480,1040,840],"text":"Pédales\nau pied"},{"src":"PK","crop":[140,400,660,920],"text":"Assise\n3 positions"},{"src":"L","crop":[180,0,780,600],"text":"Conduite\ncomme un pilote"}],
+ "packshot":"PK",
+ "dims":{"src":"L","text":"Simulateur dès 3 ans"},
+ "feature":{"name":"Ecran","src":"PK","crop":[580,40,880,300],"fill":true,"text":"Écran rétroéclairé et sons"},
+ "contents":{"src":"PK","text":"3 piles AA non incluses"}}
