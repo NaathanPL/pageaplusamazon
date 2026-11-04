@@ -1,0 +1,9 @@
+{"asin":"B0H6FVFG1G","sku":"7600340407","name":"Chariot Vétérinaire","content_id":"ff39ff13-1ddb-4fe0-be59-8d0c51ce05a3",
+ "drive_dir":"/home/claude/drive/7600340407",
+ "files":{"01":"7600340407_01_ig_Smoby_Roleplay_Veterinary.jpeg","03":"7600340407_03_ig_Smoby_Roleplay_Veterinary.jpeg","06":"7600340407_06_ig_Smoby_Roleplay_Veterinary.jpeg","L04":"7600340407_Lifestyle_04_Smoby_Roleplay_Veterinary.jpeg","L13":"7600340407_Lifestyle_13_Smoby_Roleplay_Veterinary.jpeg","L14":"7600340407_Lifestyle_14_Smoby_Roleplay_Veterinary.jpeg","L18":"7600340407_Lifestyle_18_Smoby_Roleplay_Veterinary.jpeg"},
+ "zooms":[{"src":"L13","crop":[100,700,1000,1600],"text":"Peluche panda\nà soigner"},{"src":"L04","crop":[450,345,1200,1095],"text":"Cage de transport\navec poignée"},{"src":"L18","crop":[150,1250,1150,2250],"text":"Mallette\n2 en 1"},{"src":"01","crop":[550,150,1250,850],"text":"Biberon\net accessoires"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"26 × 30 × 54 cm"},
+ "feature":{"name":"CabinetVeto","src":"L14","crop":[0,0,1500,1174],"fill":true,"c":[0.5,0.5],"text":"Le cabinet du vétérinaire"},
+ "contents":{"src":"03","text":"Peluche et 7 accessoires"},
+ "hero":{"pill":"Chariot Vétérinaire","title":"Un chariot pour soigner les animaux","subtitle":"Peluche panda · Mallette-cage · 7 accessoires","badges":["3+ ANS","PELUCHE INCLUSE","FABRIQUÉ EN FRANCE"]}}
