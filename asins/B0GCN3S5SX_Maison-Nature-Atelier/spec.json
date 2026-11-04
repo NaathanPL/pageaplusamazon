@@ -1,0 +1,9 @@
+{"asin":"B0GCN3S5SX","sku":"7600810742","name":"S.Life Maison Nature + Atelier","content_id":"294c30bd-601a-42d5-9c0c-5ac1ef307b80",
+ "drive_dir":"/home/claude/drive/7600810742",
+ "files":{"01":"7600810742_01_ig_Smoby_Outdoor_SmobyLife.jpeg","04":"7600810742_04_ig_Smoby_Outdoor_SmobyLife.jpeg","06":"7600810742_06_ig_Smoby_Outdoor_SmobyLife.jpeg","L04":"7600810742_04_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg","L05":"7600810742_05_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg","L08":"7600810742_08_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg","L09":"7600810742_09_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg"},
+ "zooms":[{"src":"L04","crop":[100,700,1500,2100],"text":"Établi et outils\nà bricoler"},{"src":"L05","crop":[100,1000,1500,2249],"text":"Bricoler comme\npapa et maman"},{"src":"L08","crop":[200,250,1500,1550],"text":"Jardiner avec\npelle et pot"},{"src":"L04","crop":[300,1000,1500,2200],"text":"Étau et outils\nà portée de main"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"127 cm de haut"},
+ "feature":{"name":"AtelierJardin","src":"04","crop":[0,0,1500,1267],"fill":true,"c":[0.5,0.5],"text":"Une cabane avec atelier"},
+ "contents":{"src":"L09","crop":[0,300,1500,1500],"fill":true,"text":"Outils et accessoires inclus"},
+ "hero":{"pill":"Maison Nature + Atelier","title":"La cabane atelier du jardin","subtitle":"Établi de jardin · Outils · Volets coulissants","badges":["2+ ANS","ATELIER INTÉGRÉ","FABRIQUÉ EN FRANCE"]}}
