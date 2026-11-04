@@ -1,0 +1,9 @@
+{"asin":"B0GF9ZJQW4","sku":"7600140408","name":"LS Siège de bain","content_id":"29a2ff9e-44e2-44d4-9f9e-323e3dc7fda7",
+ "drive_dir":"/home/claude/drive/7600140408",
+ "files":{"01":"7600140408_01_ig_Smoby_LittleSmoby.jpeg","04":"7600140408_04_ig_Smoby_LittleSmoby.jpeg","05":"7600140408_05_ig_Smoby_LittleSmoby.jpeg","06":"7600140408_06_ig_Smoby_LittleSmoby.jpeg","L03":"7600140408_03_Lifestyle_Smoby_Little_Smoby.jpeg","L07":"7600140408_07_Lifestyle_Smoby_Little_Smoby.jpeg"},
+ "zooms":[{"src":"L07","crop":[400,300,1300,1000],"text":"Roue à aube\net palmier arroseur"},{"src":"05","crop":[550,600,1350,1400],"text":"Gobelet\net jeux d'eau"},{"src":"L03","crop":[700,200,1500,1000],"text":"Éclats de rire\nà l'heure du bain"},{"src":"01","crop":[100,150,1450,1400],"text":"Siège avec tablette\nd'activités"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"51 × 33 × 34 cm"},
+ "feature":{"name":"HeureDuBain","src":"04","crop":[0,0,1500,1414],"fill":true,"c":[0.5,0.5],"text":"Le bain devient un jeu"},
+ "contents":{"src":"01","crop":[400,60,1500,900],"fill":true,"text":"5 jeux d'eau inclus"},
+ "hero":{"pill":"Siège de Bain","title":"L'heure du bain en jeux d'eau","subtitle":"Tablette d'activités · 5 jeux d'eau · Ventouses","badges":["6 MOIS+","5 JEUX D'EAU","FABRIQUÉ EN FRANCE"]}}
