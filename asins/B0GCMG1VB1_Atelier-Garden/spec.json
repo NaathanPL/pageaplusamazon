@@ -1,0 +1,9 @@
+{"asin":"B0GCMG1VB1","sku":"7600810928","name":"S.Life Atelier Garden","content_id":"8201a015-951e-4899-b229-b81d56672a76",
+ "drive_dir":"/home/claude/drive/7600810928",
+ "files":{"01":"7600810928_01_ig_Smoby_Outdoor_SmobyLife.jpeg","04":"7600810928_04_ig_Smoby_Outdoor_SmobyLife.jpeg","05":"7600810928_05_ig_Smoby_Outdoor_SmobyLife.jpeg","06":"7600810928_06_ig_Smoby_Outdoor_SmobyLife.jpeg","L01":"7600810928_01_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg","L02":"7600810928_02_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg","L03":"7600810928_03_Lifestyle_Smoby_Outdoor_SmobyLife.jpeg"},
+ "zooms":[{"src":"L01","crop":[200,550,1500,1850],"text":"Marteau, étau et\nvéhicule à construire"},{"src":"L02","crop":[100,100,1500,1500],"text":"Un atelier\npour imaginer"},{"src":"04","crop":[0,100,1300,1400],"text":"Bricoler\nà plusieurs"},{"src":"05","crop":[100,200,1400,1500],"text":"Pour les cabanes\nSmoby Life"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"93 cm de haut"},
+ "feature":{"name":"AtelierCabane","src":"L03","crop":[0,0,1500,999],"fill":true,"c":[0.5,0.5],"text":"Une cabane avec son atelier"},
+ "contents":{"src":"L02","crop":[100,1500,1500,2250],"fill":true,"text":"40 accessoires inclus"},
+ "hero":{"pill":"Atelier Garden","title":"L'atelier du petit bricoleur","subtitle":"40 accessoires · Pour cabanes Smoby Life · Anti-UV","badges":["2+ ANS","40 ACCESSOIRES","FABRIQUÉ EN FRANCE"]}}
