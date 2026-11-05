@@ -18,6 +18,20 @@
     const q = b[4].getBoundingClientRect(), k = 800 / innerWidth;
     return { x: Math.round((q.x + q.width / 2) * k), y: Math.round((q.y + q.height / 2) * k), n: b1 - b0 + 1 };
   };
+  // Bloc unique "• a • b • c" : passer le bloc en liste (sélection du champ + bouton), puis __sep(i) sélectionne
+  // le dernier séparateur " • " ; touche Return ; répéter jusqu'à 0 ; finir par __car(i) + "Delete Delete".
+  window.__sep = i => {
+    const e = eds()[i], w = document.createTreeWalker(e, NodeFilter.SHOW_TEXT), ts = []; let t; while (t = w.nextNode()) ts.push(t);
+    for (let j = ts.length - 1; j >= 0; j--) { const k = ts[j].data.lastIndexOf(' • '); if (k >= 0) { e.focus(); const r = document.createRange(); r.setStart(ts[j], k); r.setEnd(ts[j], k + 3); sel(r); return (e.textContent.match(/ • /g) || []).length; } }
+    return 0;
+  };
+  window.__selAll = i => {
+    const e = eds()[i]; e.scrollIntoView({ block: 'center' }); e.focus(); getSelection().selectAllChildren(e);
+    let p = e, b; while (p && (b = [...p.querySelectorAll('div.css-7qjrqi')].filter(x => !e.contains(x))).length < 6) p = p.parentElement;
+    const q = b[4].getBoundingClientRect(), k = 800 / innerWidth;
+    return { x: Math.round((q.x + q.width / 2) * k), y: Math.round((q.y + q.height / 2) * k) };
+  };
+  window.__show = () => eds().map((e, i) => [i, e]).filter(([, e]) => /•/.test(e.innerText)).map(([i, e]) => i + ': ' + [...e.querySelectorAll('[data-block]')].map(b => (b.closest('li') ? 'LI ' : 'P ') + b.innerText.slice(0, 40) + '…' + b.innerText.length).join(' | '));
   window.__car = i => {
     const e = eds()[i], li = [...e.querySelectorAll('li')].find(isB); if (!li) return 'fini';
     const t = first(li); e.focus(); const r = document.createRange(); r.setStart(t, t.data.indexOf('•')); r.collapse(true); sel(r);
