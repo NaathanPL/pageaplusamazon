@@ -13,7 +13,7 @@
     const e = eds()[i], bl = [...e.querySelectorAll('[data-block]')], b0 = bl.findIndex(isB);
     let b1 = b0; while (b1 + 1 < bl.length && isB(bl[b1 + 1])) b1++;
     e.scrollIntoView({ block: 'center' }); e.focus();
-    const r = document.createRange(); r.setStart(first(bl[b0]), 0); const L = last(bl[b1]); r.setEnd(L, L.length); sel(r);
+    const r = document.createRange(); r.setStart(first(bl[b0]), 0); const L = last(bl[b1]); r.setEnd(L, L.length); sel(r); e.dispatchEvent(new Event('select', { bubbles: true }));
     let p = e, b; while (p && (b = [...p.querySelectorAll('div.css-7qjrqi')].filter(x => !e.contains(x))).length < 6) p = p.parentElement;
     const q = b[4].getBoundingClientRect(), k = 800 / innerWidth;
     return { x: Math.round((q.x + q.width / 2) * k), y: Math.round((q.y + q.height / 2) * k), n: b1 - b0 + 1 };
