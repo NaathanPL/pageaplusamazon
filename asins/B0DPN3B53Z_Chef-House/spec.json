@@ -1,0 +1,8 @@
+{"asin":"B0DPN3B53Z","sku":"7600810407","name":"Chef House","content_id":"b0ad7c0d-dd54-4ec4-9b70-c32aafc5f10b",
+ "drive_dir":"/home/claude/drive/810407",
+ "files":{"01":"7600810407_01_ig_Smoby_Outdoor_SmobyLife.jpeg","03":"7600810407_03_ig_Smoby_Outdoor_SmobyLife.jpeg","05":"7600810407_05_ig_Smoby_Outdoor_SmobyLife.jpeg","L03":"7600810407_03_lifestyle_smoby_outdoor.jpeg","L06":"7600810407_06_lifestyle_smoby_outdoor.jpeg","L07":"7600810407_07_lifestyle_smoby_outdoor.jpeg","L08":"7600810407_08_lifestyle_smoby_outdoor.jpeg"},
+ "zooms":[{"src":"L06","crop":[0,450,1500,1950],"text":"Gazinière et poêle\nà crêpes"},{"src":"L07","crop":[0,600,1500,2100],"text":"Ketchup, moutarde\net aliments factices"},{"src":"L08","crop":[0,400,1500,1900],"text":"Caisse avec lecteur\nde carte bancaire"},{"src":"L03","crop":[236,0,1264,1028],"text":"Un restaurant\nà installer au jardin"}],
+ "packshot":"01",
+ "dims":{"src":"01","text":"124 × 132 × 135 cm"},
+ "feature":{"name":"Comptoir","src":"05","crop":[250,420,1400,1420],"fill":true,"c":[0.5,0.5],"text":"Comptoir et ardoises menu"},
+ "contents":{"src":"03","crop":[150,250,1450,1450],"text":"Nombreux accessoires inclus"}}

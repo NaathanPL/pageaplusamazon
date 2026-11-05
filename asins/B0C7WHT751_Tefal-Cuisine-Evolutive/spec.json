@@ -1,0 +1,8 @@
+{"asin":"B0C7WHT751","sku":"7600312308","name":"Tefal Cuisine Evolutive","content_id":"0e0ed76b-67fe-4122-839e-16b50a43482c",
+ "drive_dir":"/home/claude/drive/312308",
+ "files":{"01":"312308_01_ig_Smoby_Roleplay_Kitchen.jpeg","03":"312308_03_ig_Smoby_Roleplay_Kitchen.jpeg","05":"312308_05_ig_Smoby_Roleplay_Kitchen.jpeg","L07":"312308_Lifestyle_07_Smoby_Roleplay_Kitchen.jpeg","L08":"312308_Lifestyle_08_Smoby_Roleplay_Kitchen.jpeg","L09":"312308_Lifestyle_09_Smoby_Roleplay_Kitchen.jpeg","L10":"312308_Lifestyle_10_Smoby_Roleplay_Kitchen.jpeg"},
+ "zooms":[{"src":"L09","crop":[250,0,1250,1000],"text":"Plaque électronique\navec bruits de cuisson"},{"src":"L08","crop":[250,0,1249,999],"text":"Machine à espresso\nà capsules"},{"src":"L10","crop":[100,0,1100,1000],"text":"Four et frigo\navec rangements"},{"src":"L07","crop":[250,0,1250,1000],"text":"Coin repas\npour servir les plats"}],
+ "packshot":"01",
+ "dims":{"src":"01","text":"92 × 44 × 101 cm"},
+ "feature":{"name":"DeuxHauteurs","src":"05","crop":[150,200,1500,1400],"fill":true,"c":[0.5,0.5],"text":"Plan de travail de 50 à 58 cm"},
+ "contents":{"src":"03","crop":[300,100,1300,1450],"text":"31 accessoires inclus"}}
