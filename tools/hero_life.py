@@ -53,7 +53,9 @@ def main(sp_path):
         bx += D + 14 * SS
     if sp.get('extra'):
         d.ellipse((bx, by, bx + D, by + D), fill='white', outline=GREEN, width=3 * SS)
-        fe = F(int(D * 0.19), 700); lines = sp['extra']; tot = len(lines) * int(D * 0.24)
+        lines = sp['extra']; fsz = int(D * 0.19)
+        while fsz > 10 and max(d.textlength(l, font=F(fsz, 700)) for l in lines) > D * 0.80: fsz -= 1
+        fe = F(fsz, 700); tot = len(lines) * int(D * 0.24)
         yy = by + (D - tot) / 2
         for ln in lines:
             bb = d.textbbox((0, 0), ln, font=fe); d.text((bx + (D - bb[2] + bb[0]) / 2 - bb[0], yy), ln, font=fe, fill=GREEN); yy += int(D * 0.24)
