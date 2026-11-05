@@ -24,17 +24,44 @@ def main(spec_path):
     p = lambda f: f if os.path.isabs(f) else os.path.join(base, f)
     w, h = W * SS, H * SS
     img = cover(Image.open(p(sp['decor'])).convert('RGB'), w, h).convert('RGBA')
+    # profondeur : léger flou du décor (le produit reste net)
+    img = Image.alpha_composite(img.filter(ImageFilter.GaussianBlur(1.6 * SS)).convert('RGBA'), Image.new('RGBA', img.size, (255, 236, 200, 22)))
+    decor_sharp = cover(Image.open(p(sp['decor'])).convert('RGB'), w, h).convert('RGBA')
     # produit réel, proportions d'origine
     pk = trim(Image.open(p(sp['pack'])).convert('RGBA'))
     x0, y0, x1, y1 = [v * SS for v in sp.get('pack_box', [405, 62, 945, 560])]
     s = min((x1 - x0) / pk.width, (y1 - y0) / pk.height)
     pk = pk.resize((round(pk.width * s), round(pk.height * s)), Image.LANCZOS)
+    # contour adouci + éclairage chaud, contraste légèrement réduit pour se fondre dans la scène
+    al = pk.getchannel('A').filter(ImageFilter.GaussianBlur(0.7 * SS)); pk.putalpha(al)
+    import numpy as np
+    arr = np.array(pk).astype(float)
+    arr[..., :3] = (arr[..., :3] - 128) * 0.93 + 128
+    arr[..., 0] *= 1.02; arr[..., 1] *= 0.985; arr[..., 2] *= 0.93
+    gy = np.linspace(1.04, 0.90, arr.shape[0])[:, None]  # haut éclairé, bas plus sombre
+    arr[..., :3] *= gy[..., None]
+    pk = Image.fromarray(np.clip(arr, 0, 255).astype('uint8'), 'RGBA')
     px = x0 + ((x1 - x0) - pk.width) // 2; py = y1 - pk.height
-    # ombre de contact
+    # ombre portée (soleil en haut à gauche) + ombre de contact
     sh = Image.new('RGBA', img.size, (0, 0, 0, 0)); d = ImageDraw.Draw(sh)
-    d.ellipse((px + pk.width * 0.04, py + pk.height - 22 * SS, px + pk.width * 0.98, py + pk.height + 14 * SS), fill=(20, 30, 10, 110))
-    sh = sh.filter(ImageFilter.GaussianBlur(10 * SS)); img.alpha_composite(sh)
+    d.polygon([(px + pk.width * 0.05, py + pk.height - 6 * SS), (px + pk.width * 1.02, py + pk.height - 6 * SS),
+               (px + pk.width * 1.16, py + pk.height + 16 * SS), (px + pk.width * 0.20, py + pk.height + 22 * SS)], fill=(15, 28, 8, 120))
+    sh = sh.filter(ImageFilter.GaussianBlur(9 * SS)); img.alpha_composite(sh)
+    sh2 = Image.new('RGBA', img.size, (0, 0, 0, 0)); d = ImageDraw.Draw(sh2)
+    d.ellipse((px + pk.width * 0.03, py + pk.height - 8 * SS, px + pk.width * 1.0, py + pk.height + 9 * SS), fill=(10, 20, 5, 190))
+    img.alpha_composite(sh2.filter(ImageFilter.GaussianBlur(3.5 * SS)))
     img.alpha_composite(pk, (px, py))
+    # herbe devant la base du produit (touffes tirées du décor net)
+    rng = np.random.default_rng(7); band = 20 * SS; yb = py + pk.height
+    m = np.zeros((h, w), float)
+    cols = rng.random(w); cols = np.convolve(cols, np.ones(5 * SS) / (5 * SS), mode='same')
+    for xx in range(px, min(px + pk.width, w)):
+        hh = int(band * (0.25 + 1.1 * cols[xx]))
+        m[max(yb - hh, 0):yb + 2 * SS, xx] = np.linspace(0.0, 1.0, min(hh, yb) + 2 * SS)[:m[max(yb - hh, 0):yb + 2 * SS, xx].shape[0]]
+    m = np.array(Image.fromarray((m * 255).astype('uint8')).filter(ImageFilter.GaussianBlur(0.8 * SS))) / 255.0
+    grass = decor_sharp.copy(); gm = np.array(grass).astype(float)
+    gm[..., :3] *= 0.92; grass = Image.fromarray(np.clip(gm, 0, 255).astype('uint8'), 'RGBA')
+    grass.putalpha(Image.fromarray((m * 255).astype('uint8'))); img.alpha_composite(grass)
     # panneau crème, bord en vague
     pan = Image.new('RGBA', img.size, (0, 0, 0, 0)); d = ImageDraw.Draw(pan)
     import math
