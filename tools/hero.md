@@ -9,3 +9,9 @@ Prompt (remplacer les {…}) :
 Crée une bannière Amazon A+ 970x600 dans le style exact de la première image. Panneau gauche crème avec bord en vague ; titre gras marron foncé sur 3 lignes : "{titre}" ; sous-titre vert sur 2 lignes : "{sous-titre}" ; 3 badges ronds : corail "{âge}", blanc cerclé vert "{atout}", blanc cerclé marron "FABRIQUÉ EN FRANCE" avec picto pin (seulement si le pin est sur la boîte) ; pastille vert #2E5541 en haut à droite avec "{nom produit}". Produit de la deuxième image à droite, fidèle, dans une scène réaliste. Pas de boîte, pas de mention recyclé, pas de logo, texte en français sans faute.
 
 Attente : envoyer le prompt hero puis faire le reste de la page ; première vérification à 1 min 40 après l envoi, puis une par minute.
+
+## Règle du 05/11 (retour client + Nathan)
+- ChatGPT reçoit TOUT : modèle, vraie photo produit, logos officiels (tools/assets/logos) et texte de note Anti-UV. Aucune retouche locale ensuite (hero_build.py et hero_overlay.py ne servent plus qu'en secours).
+- Nouveau hero : `__hero2(urlProduit,{title,subtitle,age,pill,antiuv,fab,footnote})`. Hero existant à corriger (logos) : `__heroFix(urlHero,{antiuv,fab,pill,footnote})`.
+- Le produit doit rester fidèle (jamais redessiné) et intégré à la scène (ombre, herbe/sol, lumière). Ouvertures blanches du packshot = traversantes.
+- Contrôle du rendu : logos identiques aux fichiers officiels. Si ChatGPT les déforme, relancer ; ne pas corriger à la main.
