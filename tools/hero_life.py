@@ -60,8 +60,17 @@ def main(sp_path):
         for ln in lines:
             bb = d.textbbox((0, 0), ln, font=fe); d.text((bx + (D - bb[2] + bb[0]) / 2 - bb[0], yy), ln, font=fe, fill=GREEN); yy += int(D * 0.24)
         bx += D + 14 * SS
+    if sp.get('anti_uv'):  # note anti-UV, toujours la même mention (demande Nathan 05/11/2026)
+        note = '* ' + sp.get('uv_note', "Résistance équivalente à 3 ans (Dégradation max 3 sur 5 sur l'échelle des gris. Norme D15 1343)")
+        fn = F(12 * SS, 600); words = note.split(); lines, cur = [], ''
+        for w_ in words:
+            t = (cur + ' ' + w_).strip()
+            if d.textlength(t, font=fn) > 320 * SS and cur: lines.append(cur); cur = w_
+            else: cur = t
+        lines.append(cur); yy = by + D + 12 * SS
+        for ln in lines: d.text((16 * SS, yy), ln, font=fn, fill=BROWN); yy += 16 * SS
     if sp.get('fab'):
-        fb = Image.open(os.path.join(LOGOS, 'fab_bloc_rvb.png')).convert('RGBA'); fb = fb.crop(fb.getbbox())
+        fb =Image.open(os.path.join(LOGOS, 'fab_bloc_rvb.png')).convert('RGBA'); fb = fb.crop(fb.getbbox())
         fh = int(D * 1.0); fb = fb.resize((round(fb.width * fh / fb.height), fh), Image.LANCZOS); big.alpha_composite(fb, (bx, by + int(D * 0.0)))
     # étiquette produit en haut à droite
     pf = F(26 * SS, 700); bb = d.textbbox((0, 0), sp['pill'], font=pf); pw = bb[2] - bb[0] + 36 * SS; ph_ = 46 * SS
