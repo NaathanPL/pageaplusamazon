@@ -1,0 +1,9 @@
+{"asin":"B0FCSQTZC4","sku":"7600253121","name":"Maxi-Cosi Poussette + Landau Rose","content_id":"2f4739a2-7dc1-4fcd-85f8-ffd3ab70731c",
+ "drive_dir":"/home/claude/pageaplusamazon/asins/B0FCSQTZC4_Maxi-Cosi-Poussette-Landau-Rose/drive",
+ "files":{"01":"7600253121_01_ig_Smoby_Maxicosi.jpeg","03":"7600253121_03_ig_Smoby_Maxicosi.jpeg","06":"7600253121_06_ig_Smoby_Maxicosi.jpeg","L01":"7600253121_01_Lifestyle_Smoby_Maxicosi.jpeg","L02":"7600253121_02_Lifestyle_Smoby_Maxicosi.jpeg","L04":"7600253121_04_Lifestyle_Smoby_Maxicosi.jpeg","L07":"7600253121_07_Lifestyle_Smoby_Maxicosi.jpeg","L12":"7600253121_12_Lifestyle_Smoby_Maxicosi.jpeg"},
+ "zooms":[{"src":"L01","crop":[150,150,1400,1400],"text":"Promenade\nen landau"},{"src":"L12","crop":[300,0,1300,1000],"text":"Nacelle amovible\navec poignée"},{"src":"L02","crop":[500,0,1500,1000],"text":"Se transforme\nen buggy"},{"src":"L04","crop":[250,0,1250,1000],"text":"Panier de transport\npour le poupon"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"54,5 × 38,5 × 64 cm"},
+ "feature":{"name":"Compatibilite","src":"03","crop":[0,150,1500,1450],"text":"Compatible siège Maxi-Cosi"},
+ "contents":{"src":"L07","crop":[100,150,1300,1314],"text":"Nacelle, landau, buggy"},
+ "hero":{"pill":"Maxi-Cosi","title":"La poussette 3 en 1 de son poupon","subtitle":"Nacelle · Landau · Poussette","badges":["3+ ANS","3 EN 1","FABRIQUÉ EN ESPAGNE"]}}
