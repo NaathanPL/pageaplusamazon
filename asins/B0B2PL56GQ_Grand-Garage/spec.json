@@ -1,0 +1,8 @@
+{"asin":"B0B2PL56GQ","sku":"7600140203","name":"Grand Garage","content_id":"c507a0d9-da9b-4c1a-8296-1800e81ee377",
+ "drive_dir":"/home/claude/drive/140203",
+ "files":{"s01":"s01.jpg","s02":"s02.jpg","a1":"a1.jpg","a0":"a0.jpg","a5":"a5.jpg"},
+ "zooms":[{"src":"s01","crop":[120,40,900,820],"text":"Méga rampe\nsur 3 étages"},{"src":"s02","crop":[120,0,953,833],"text":"Station de lavage\net tunnel"},{"src":"a1","crop":[250,60,1100,788],"text":"Petits bolides\nà faire rouler"},{"src":"a0","crop":[480,0,966,486],"text":"Héliport et\nascenseur"}],
+ "packshot":"a0",
+ "dims":{"src":"a0","text":"62 × 60 × 43 cm"},
+ "feature":{"name":"Pompes","src":"a0","crop":[0,560,966,1041],"fill":true,"c":[0.5,0.5],"text":"Pompe à essence et pistes"},
+ "contents":{"src":"a5","text":"1 voiture et 1 hélicoptère inclus"}}
