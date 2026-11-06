@@ -1,0 +1,9 @@
+{"asin":"B0FCSRKCBC","sku":"7600360741","name":"Bricolo Builder","content_id":"2ada7eca-8a00-47d1-8c7a-de585621dc2b",
+ "drive_dir":"/home/claude/pageaplusamazon/asins/B0FCSRKCBC_Bricolo-Builder/drive",
+ "files":{"01":"7600360741_01_ig_Smoby_Roleplay_DIY.jpeg","03":"7600360741_03_ig_Smoby_Roleplay_DIY.jpeg","05":"7600360741_05_ig_Smoby_Roleplay_DIY.jpeg","06":"7600360741_06_ig_Smoby_Roleplay_DIY.jpeg","L02":"7600360741_02_Lifestyle_Smoby_Roleplay_DIY.jpeg","L03":"7600360741_03_Lifestyle_Smoby_Roleplay_DIY.jpeg","L04":"7600360741_04_Lifestyle_Smoby_Roleplay_DIY.jpeg","L09":"7600360741_09_Lifestyle_Smoby_Roleplay_DIY.jpeg"},
+ "zooms":[{"src":"05","crop":[150,250,1250,1350],"text":"Visseuse sans fil\nà vissage mécanique"},{"src":"L03","crop":[700,0,1500,800],"text":"Grue qui soulève\net fait tourner"},{"src":"L09","crop":[0,1000,1250,2250],"text":"Véhicule à construire\nen plusieurs variantes"},{"src":"L02","crop":[500,0,1500,999],"text":"7 outils fidèles\naux modèles originaux"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"36 × 57,5 × 101,6 cm"},
+ "feature":{"name":"Surface","src":"L04","crop":[400,0,1500,999],"fill":true,"c":[0.5,0.5],"text":"Grande surface de travail"},
+ "contents":{"src":"03","text":"7 outils et visseuse inclus"},
+ "hero":{"pill":"Bricolo Builder","title":"Un établi avec grue pour bricoler","subtitle":"7 outils · Visseuse · Kit véhicule","badges":["3+ ANS","FABRIQUÉ EN FRANCE"]}}
