@@ -1,0 +1,8 @@
+{"asin":"B0C4FT616B","sku":"7600312600","name":"Cuisine Loft","content_id":"0d1eeab2-811f-441a-965b-a83390df5143",
+ "drive_dir":"/home/claude/drive/312600",
+ "files":{"p1":"312600_01_ig_Smoby_Roleplay_Kitchen.jpeg","acc":"312600_03_ig_Smoby_Roleplay_Kitchen.jpeg","l6":"312600_06_Lifestyle_Smoby_Roleplay_Kitchen.jpeg","l10":"312600_10_Lifestyle_Smoby_Roleplay_Kitchen.jpeg","l12":"312600_12_Lifestyle_Smoby_Roleplay_Kitchen.jpeg","l5":"312600_05_Lifestyle_Smoby_Roleplay_Kitchen.jpeg","l13":"312600_13_Lifestyle_Smoby_Roleplay_Kitchen.jpeg"},
+ "zooms":[{"src":"l6","crop":[250,0,1250,1000],"text":"Évier\net robinet"},{"src":"l10","crop":[250,0,1250,1000],"text":"Plaque de cuisson\net ustensiles"},{"src":"l12","crop":[0,0,1000,1000],"text":"Four à porte\nouvrante"},{"src":"l5","crop":[450,150,1500,1200],"text":"Machine à café\net capsules"}],
+ "packshot":"p1",
+ "dims":{"src":"p1","text":"74 × 29 × 96 cm"},
+ "feature":{"name":"BacsTri","src":"l13","crop":[200,0,1500,999],"fill":true,"c":[0.5,0.5],"text":"Bacs de tri sélectif"},
+ "contents":{"src":"acc","text":"32 accessoires inclus"}}
