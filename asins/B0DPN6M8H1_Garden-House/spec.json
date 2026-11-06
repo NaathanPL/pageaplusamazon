@@ -1,0 +1,9 @@
+{"asin":"B0DPN6M8H1","sku":"7600810408","name":"Garden House","content_id":"857a7c29-487e-4869-bad4-525eea016ebb",
+ "drive_dir":"/home/claude/drive/7600810408",
+ "files":{"p1":"7600810408_01_ig_Smoby_Outdoor_SmobyLife.jpeg","l2":"7600810408_02_lifestyle_smoby_outdoor.jpeg","acc":"7600810408_03_ig_Smoby_Outdoor_SmobyLife.jpeg","l3":"7600810408_03_lifestyle_smoby_outdoor.jpeg","ig4":"7600810408_04_ig_Smoby_Outdoor_SmobyLife.jpeg","l4":"7600810408_04_lifestyle_smoby_outdoor.jpeg","ig5":"7600810408_05_ig_Smoby_Outdoor_SmobyLife.jpeg"},
+ "zooms":[{"src":"l2","crop":[0,250,1500,1750],"text":"Coin jardinage\nà l'intérieur"},{"src":"l4","crop":[0,0,1483,1483],"text":"6 pots à fixer\nsur le treillis"},{"src":"l3","crop":[350,0,1350,1000],"text":"Table de travail\namovible"},{"src":"ig5","crop":[0,350,1150,1500],"text":"Grande jardinière\npour planter"}],
+ "packshot":"p1",
+ "dims":{"src":"p1","text":"128,5 × 132 × 135 cm"},
+ "feature":{"name":"Toit","src":"ig4","crop":[0,100,1500,1400],"fill":true,"c":[0.5,0.5],"text":"Toit à 1,35 m de haut"},
+ "contents":{"src":"acc","text":"Outils et pots inclus"},
+ "hero":{"pill":"Garden House","title":"Une cabane pour apprendre à jardiner","subtitle":"Jardinière · Récupérateur d'eau","badges":["2+ ANS","ANTI-UV","FABRIQUÉ EN FRANCE"]}}
