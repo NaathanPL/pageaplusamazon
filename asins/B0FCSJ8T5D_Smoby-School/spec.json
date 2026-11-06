@@ -1,0 +1,9 @@
+{"asin":"B0FCSJ8T5D","sku":"7600380103","name":"Smoby School","content_id":"85641a29-e13b-467f-aa44-0a13828b4408",
+ "drive_dir":"/home/claude/pageaplusamazon/asins/B0FCSJ8T5D_Smoby-School/drive",
+ "files":{"01":"7600380103_01_ig_Smoby_Roleplay_School.jpeg","03":"7600380103_03_ig_Smoby_Roleplay_School.jpeg","06":"7600380103_06_ig_Smoby_Roleplay_School.jpeg","L02":"7600380103_02_ig_Lifestyle_Smoby_School.jpeg","L04":"7600380103_04_ig_Lifestyle_Smoby_School.jpeg","L05":"7600380103_05_ig_Lifestyle_Smoby_School.jpeg","L06":"7600380103_06_ig_Lifestyle_Smoby_School.jpeg","L07":"7600380103_07_ig_Lifestyle_Smoby_School.jpeg"},
+ "zooms":[{"src":"L06","crop":[0,250,1500,1750],"text":"Ardoise pour écrire\net dessiner"},{"src":"L05","crop":[0,0,1000,1000],"text":"Horloge tournante\npour apprendre l'heure"},{"src":"L02","crop":[400,0,1400,1000],"text":"Arbre météo\npour les saisons"},{"src":"L04","crop":[300,0,1300,1000],"text":"Roue des jours\nde la semaine"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"135 × 41 × 111 cm"},
+ "feature":{"name":"Velcro","src":"L07","crop":[0,500,1500,2000],"fill":true,"c":[0.5,0.5],"text":"Cartes velcro faciles à fixer"},
+ "contents":{"src":"03","text":"Cartes et feutre inclus"},
+ "hero":{"pill":"Smoby School","title":"Une salle de classe pour jouer à la maîtresse","subtitle":"Ardoise · Horloge · Alphabet","badges":["3+ ANS","FABRIQUÉ EN FRANCE"]}}
