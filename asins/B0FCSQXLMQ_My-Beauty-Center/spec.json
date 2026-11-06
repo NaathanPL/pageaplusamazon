@@ -1,0 +1,9 @@
+{"asin":"B0FCSQXLMQ","sku":"7600320256","name":"My Beauty Center","content_id":"4b22dffb-b6a2-400d-8fc7-b5d1b9d0b092",
+ "drive_dir":"/home/claude/pageaplusamazon/asins/B0FCSQXLMQ_My-Beauty-Center/drive",
+ "files":{"01":"7600320256_01_ig_Smoby_RolePlay_Beauty.jpeg","03":"7600320256_03_ig_Smoby_RolePlay_Beauty.jpeg","06":"7600320256_06_ig_Smoby_RolePlay_Beauty.jpeg","L07":"7600320256_07_Lifestyle_Smoby_Roleplay_Beauty.jpeg","L08":"7600320256_08_Lifestyle_Smoby_Roleplay_Beauty.jpeg","L09":"7600320256_09_Lifestyle_Smoby_Roleplay_Beauty.jpeg","L12":"7600320256_12_Lifestyle_Smoby_Roleplay_Beauty.jpeg","L13":"7600320256_13_Lifestyle_Smoby_Roleplay_Beauty.jpeg"},
+ "zooms":[{"src":"L09","crop":[0,300,1500,1800],"text":"Sèche-cheveux\nlumineux et sonore"},{"src":"L08","crop":[450,0,1500,999],"text":"Coiffeuse avec\nmiroir inclinable"},{"src":"L13","crop":[550,50,1500,999],"text":"Espace shampoing\navec douchette"},{"src":"L12","crop":[0,300,1500,1800],"text":"Terminal de paiement\net carte bancaire"}],
+ "packshot":"01",
+ "dims":{"src":"06","text":"97,5 × 51,4 × 85 cm"},
+ "feature":{"name":"Vente","src":"L07","crop":[0,750,1500,2250],"fill":true,"c":[0.5,0.5],"text":"Espace vente avec caisse"},
+ "contents":{"src":"03","text":"26 accessoires inclus"},
+ "hero":{"pill":"My Beauty Center","title":"Un institut de beauté 3 en 1","subtitle":"Coiffure · Onglerie · Maquillage","badges":["3+ ANS","FABRIQUÉ EN FRANCE"]}}
