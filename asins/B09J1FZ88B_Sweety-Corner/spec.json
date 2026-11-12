@@ -1,0 +1,6 @@
+{"asin":"B09J1FZ88B","sku":"7600810718","name":"Maison Sweety Corner Smoby Life","content_id":"f7b2040e-57aa-4e58-961b-61b738af7ff6","drive_dir":"/home/claude/drive/7600810718",
+"files":{"p":"7600810718_01_ig_Smoby_Outdoor_SmobyLife.jpeg","a":"7600810718_03_ig_Smoby_Outdoor_SmobyLife.jpeg","i4":"7600810718_04_ig_Smoby_Outdoor_SmobyLife.jpeg","d":"7600810718_06_ig_Smoby_Outdoor_SmobyLife.jpeg","l2":"810718_02_lifestyle_smoby_outdoor.jpeg","l3":"810718_03_lifestyle_smoby_outdoor.jpeg","l4":"810718_04_lifestyle_smoby_outdoor.jpeg","l5":"810718_05_lifestyle_smoby_outdoor.jpeg"},
+"zooms":[{"src":"l2","crop":[200,150,1300,1250],"text":"Machine à glaces pour\ndes créations gourmandes"},{"src":"l5","crop":[300,0,1325,1025],"text":"Poêle à crêpes\nà faire sauter"},{"src":"l3","crop":[0,0,1000,1000],"text":"Lecteur de carte\npour encaisser"},{"src":"l4","crop":[300,0,1223,923],"text":"Volet coulissant\nà écrire à la craie"}],
+"packshot":"p","dims":{"src":"d","text":"Dimensions de la maison"},
+"feature":{"name":"Boutique","src":"i4","fill":true,"text":"Un comptoir de vente\npour servir les clients"},
+"contents":{"src":"a","text":"Glaces, crêpes, couverts\net lecteur de carte"}}

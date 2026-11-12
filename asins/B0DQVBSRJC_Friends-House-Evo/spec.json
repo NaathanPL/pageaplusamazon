@@ -1,0 +1,6 @@
+{"asin":"B0DQVBSRJC","sku":"7600810206","name":"Maison Friends House Evo Smoby Life","content_id":"50a177e0-1aa8-425f-ab6c-c72a4c9758ba","drive_dir":"/home/claude/drive/7600810206",
+"files":{"p":"7600810206_01_ig_Smoby_Outdoor_SmobyLife.jpeg","i4":"7600810206_04_ig_Smoby_Outdoor_SmobyLife.jpeg","i5":"7600810206_05_ig_Smoby_Outdoor_SmobyLife.jpeg","d":"7600810206_06_ig_Smoby_Outdoor_SmobyLife.jpeg","l1":"7600810206_01_lifestyle_smoby_outdoor.jpeg","l3":"7600810206_03_lifestyle_smoby_outdoor.jpeg","acc":"7600810206_with_accessories.jpeg"},
+"zooms":[{"src":"i4","crop":[0,250,1000,1250],"text":"Six fenêtres pour\nobserver le jardin"},{"src":"l3","crop":[250,0,1250,1000],"text":"Volets pivotant\nà 360°"},{"src":"i4","crop":[550,400,1500,1350],"text":"Boîte aux lettres\nqui ferme à clé"},{"src":"i5","crop":[400,250,1400,1250],"text":"Une cabane pour jouer\nà plusieurs"}],
+"packshot":"p","dims":{"src":"d","text":"Dimensions de la maison"},
+"feature":{"name":"Jardin","src":"l1","fill":true,"text":"Un terrain d'aventure\ndans son jardin"},
+"contents":{"src":"acc","fill":true,"text":"Personnalisable avec les\naccessoires Smoby"}}
