@@ -1,0 +1,6 @@
+{"asin":"B08QYFNF9L","sku":"7600312001","name":"BBQ Grill Smoby","content_id":"","drive_dir":"/home/claude/drive/312001",
+"files":{"p":"312001_A2.jpeg","b1":"312001_B1.jpeg","c":"312001_C.jpeg","d":"312001_D.jpeg","l1":"312001_PE21_Lifestyle_1.jpeg","l12":"312001_PE21_Lifestyle_12.jpeg","l14":"312001_PE21_Lifestyle_14.jpeg"},
+"zooms":[{"src":"d","crop":[150,0,1150,1000],"text":"Côté grill et\ncôté plancha"},{"src":"l14","crop":[250,0,1250,1000],"text":"Brochette à composer\navec viande et légumes"},{"src":"l1","crop":[350,900,1450,2000],"text":"Hamburger\nà assembler"},{"src":"l12","crop":[200,700,1400,1900],"text":"Plan de travail\nà 45 cm de haut"}],
+"packshot":"p","dims":{"src":"p","text":"BBQ Grill : 50 x 37 x 72,2 cm"},
+"feature":{"name":"Grillades","src":"b1","fill":true,"text":"Des grillades en famille\nau jardin"},
+"contents":{"src":"c","text":"18 accessoires\npour jouer au cuistot"}}

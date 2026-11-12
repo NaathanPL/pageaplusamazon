@@ -1,0 +1,6 @@
+{"asin":"B0CQP8TYGN","sku":"7600810731","name":"Maison 4 Seasons Smoby Life","content_id":"4c195429-fa4a-46e1-8f05-536f28fe7929","drive_dir":"/home/claude/drive/810731",
+"files":{"p":"810731_01_ig_Smoby_Outdoor.jpeg","d":"810731_06_ig_Smoby_Outdoor.jpeg","h":"810731_04_ig_Smoby_Outdoor.jpeg","u":"810731_05_ig_Smoby_Outdoor.jpeg","l3":"810731_smoby_lifestyle_outdoor_03.jpeg","l7":"810731_smoby_lifestyle_outdoor_07.jpeg","l8":"810731_smoby_lifestyle_outdoor_08.jpeg","l9":"810731_smoby_lifestyle_outdoor_09.jpeg","l13":"810731_smoby_lifestyle_outdoor_13.jpeg"},
+"zooms":[{"src":"l9","crop":[250,0,1250,1000],"text":"Girouette et anémomètre\npour observer le vent"},{"src":"l7","crop":[250,0,1250,1000],"text":"Pluviomètre pour mesurer\nla pluie tombée"},{"src":"l13","crop":[350,0,1350,1000],"text":"Tableau météo avec\ncurseurs des saisons"},{"src":"l8","crop":[300,0,1300,1000],"text":"Petit météorologue\nau fil des journées"}],
+"packshot":"p","dims":{"src":"d","text":"Dimensions de la maison"},
+"feature":{"name":"Saisons","src":"u","fill":true,"text":"Jouer et se cacher\npar tous les temps"},
+"contents":{"src":"l3","crop":[0,950,1500,2050],"text":"Portillon, volets coulissants\net fenêtre à l'arrière"}}
