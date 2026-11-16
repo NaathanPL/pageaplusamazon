@@ -2,10 +2,12 @@
 import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, features
 LE=ImageFont.Layout.RAQM if features.check('raqm') else ImageFont.Layout.BASIC
-FD=os.path.join(os.path.dirname(__file__),'fonts','poppins-latin-%d-normal.woff')
+FD=os.path.join(os.path.dirname(__file__),'fonts','fredoka-latin-%d-normal.woff')  # police unique de la charte (hero + bandeaux)
 GREEN=(46,85,65); CORAL=(212,91,71); DARK=(59,50,45); BG=(244,239,231); WHITE=(255,255,255); GREY=(120,112,105)
 SS=4; O=600  # taille des visuels carrés
-def F(s,w=700): return ImageFont.truetype(FD%w,s,layout_engine=LE)
+def F(s,w=700):
+    w=min(w,700)  # Fredoka : 400 à 700
+    return ImageFont.truetype(FD%w,int(s),layout_engine=LE)
 def cover(im,w,h,cx=0.5,cy=0.5):
     s=max(w/im.width,h/im.height); im=im.resize((round(im.width*s),round(im.height*s)),Image.LANCZOS)
     x=int((im.width-w)*cx); y=int((im.height-h)*cy); return im.crop((x,y,x+w,y+h))
