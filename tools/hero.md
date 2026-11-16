@@ -21,3 +21,8 @@ Attente : envoyer le prompt hero puis faire le reste de la page ; première vér
 - Seule fonction autorisée, et seulement avec l'accord de Nathan quand aucune photo Drive ne convient : `__heroDecor(urlPackshot,{scene})`. Elle demande uniquement la photo de droite : produit strictement identique au packshot, rien d'ajouté, aucun texte, logo, badge ni panneau.
 - Récupération `__heroGet()` puis dec.py vers `asins/<dir>/decor.jpg`, utilisé comme `photo` dans hero_spec.json (scale 1, ox 0). La vague, les textes et les logos officiels sont posés par hero_life.py, comme sur toutes les pages.
 - Contrôle : comparer le produit généré au packshot. Une pièce, un accessoire ou une fonction en plus ou en moins : relancer, sinon demander à Nathan.
+
+## Décision du 16/11 (Nathan) : plus de ChatGPT
+- Plus aucune génération d image par IA pour les pages A+ Smoby. Le hero est toujours fait par hero_life.py sur une vraie photo Drive.
+- Aucune photo utilisable après les deux recherches Drive (SKU complet et 6 derniers chiffres) : demander à Nathan.
+- hero.js et les sections ci-dessus sont gardés pour archive, à ne plus utiliser.
