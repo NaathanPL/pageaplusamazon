@@ -35,4 +35,11 @@ window.__hero2=async(prod,o)=>{const L=logosPart(o,3);
 window.__heroFix=async(hero,o)=>{const L=logosPart(o,2);
  return send([['hero.png',hero],...L.f],
  `Refais cette bannière à l'identique (même scène, même produit, même mise en page, mêmes textes${o.pill?`, pastille "${o.pill}"`:''}) en changeant uniquement les badges du bas du panneau crème. Garde le badge rond d'âge. ${rules(o,L)} Supprime les anciens badges Anti-UV et Fabriqué en France. Ne modifie pas le produit.`)};
+// ---- Version 16/11 (retour client : pictos modifiés par IA, fonctions ajoutées). SEULE fonction ChatGPT autorisée pour un hero.
+// __heroDecor(urlPackshot, {scene}) : ChatGPT ne produit QUE la photo de droite (produit dans un décor), sans texte, logo, badge ni panneau.
+// La vague, les textes et les logos officiels sont ensuite posés par tools/hero_life.py (image récupérée = "photo" du hero_spec, scale 1, ox 0).
+// __hero, __hero2 et __heroFix (bannière complète générée) ne doivent plus être utilisés.
+window.__heroDecor=async(prod,o={})=>send([['produit.png',prod]],
+ `Crée une photo réaliste au format paysage 970x600 du produit de l'image jointe${o.scene?`, dans ce décor : ${o.scene}`:', dans un décor réaliste adapté à son usage'}. `+
+ `RÈGLES STRICTES. 1) Le produit est reproduit à l'identique de l'image jointe : mêmes formes, mêmes couleurs, mêmes proportions, mêmes détails, même nombre d'éléments. N'ajoute, ne retire et ne modifie aucune pièce, aucun accessoire, aucune fonction, aucun autocollant. Ne mets aucun objet qui pourrait passer pour un accessoire du produit. 2) Aucun texte, aucun logo, aucun badge, aucun pictogramme, aucune étiquette, aucun cadre, aucun panneau de couleur, aucune vague : seulement la photo. 3) Aucun enfant ni personnage. 4) Le produit est entier, net, placé dans la moitié droite de l'image ; le tiers gauche ne contient que du décor sans élément important. 5) Produit bien intégré : contact avec le sol, ombre portée cohérente, lumière harmonisée. Les ouvertures du produit sont traversantes, on voit le décor à travers. 6) Pas de boîte, pas d'emballage.`);
 })();

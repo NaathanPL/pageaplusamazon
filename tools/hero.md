@@ -15,3 +15,9 @@ Attente : envoyer le prompt hero puis faire le reste de la page ; première vér
 - Nouveau hero : `__hero2(urlProduit,{title,subtitle,age,pill,antiuv,fab,footnote})`. Hero existant à corriger (logos) : `__heroFix(urlHero,{antiuv,fab,pill,footnote})`.
 - Le produit doit rester fidèle (jamais redessiné) et intégré à la scène (ombre, herbe/sol, lumière). Ouvertures blanches du packshot = traversantes.
 - Contrôle du rendu : logos identiques aux fichiers officiels. Si ChatGPT les déforme, relancer ; ne pas corriger à la main.
+
+## Règle du 16/11 (retour client : pictos modifiés par IA, fonctions ajoutées) : remplace la règle du 05/11
+- ChatGPT ne génère plus jamais une bannière complète. `__hero`, `__hero2`, `__heroFix` : ne plus utiliser.
+- Seule fonction autorisée, et seulement avec l'accord de Nathan quand aucune photo Drive ne convient : `__heroDecor(urlPackshot,{scene})`. Elle demande uniquement la photo de droite : produit strictement identique au packshot, rien d'ajouté, aucun texte, logo, badge ni panneau.
+- Récupération `__heroGet()` puis dec.py vers `asins/<dir>/decor.jpg`, utilisé comme `photo` dans hero_spec.json (scale 1, ox 0). La vague, les textes et les logos officiels sont posés par hero_life.py, comme sur toutes les pages.
+- Contrôle : comparer le produit généré au packshot. Une pièce, un accessoire ou une fonction en plus ou en moins : relancer, sinon demander à Nathan.
