@@ -10,7 +10,7 @@ from scipy.interpolate import PchipInterpolator
 sys.path.insert(0, os.path.dirname(__file__))
 from aplus import F
 SS = 3; W, H = 970, 600
-CREAM = (253, 240, 221); BROWN = (58, 22, 14); GREEN = (62, 98, 58); RED = (232, 66, 70); PILL = (46, 85, 65)
+CREAM = (253, 240, 221); BROWN = (58, 22, 14); GREEN = (46, 85, 65); RED = (232, 66, 70); PILL = GREEN  # vert unique #2E5541, le même que les bandeaux (aplus.py)
 LOGOS = os.path.join(os.path.dirname(__file__), 'assets', 'logos')
 
 def main(sp_path):
