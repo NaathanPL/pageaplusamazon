@@ -67,7 +67,12 @@ def main(sp_path):
             d.text((bx + (D - (b2[2] - b2[0])) / 2 - b2[0], y0 + (b1[3] - b1[1]) + g - b2[1]), u, font=f2, fill='white')
         elif k == 'uv':
             uv = Image.open(os.path.join(LOGOS, 'logo_anti_uv.png')).convert('RGBA').resize((D, D), Image.LANCZOS)
-            big.alpha_composite(uv, (bx, by)); d.text((bx + D - 6 * SS, by - 10 * SS), '*', font=F(D * 0.4, 700), fill=BROWN)
+            big.alpha_composite(uv, (bx, by))
+            fa = F(D * 0.2, 700); ab = d.textbbox((0, 0), '*', font=fa)  # astérisque petit, collé en haut à droite du logo
+            lb = uv.getchannel('A').point(lambda v: 255 if v > 128 else 0).getbbox()  # cercle visible du logo
+            r = (lb[2] - lb[0]) / 2; ccx = bx + (lb[0] + lb[2]) / 2; ccy = by + (lb[1] + lb[3]) / 2; aw = ab[2] - ab[0]; ah = ab[3] - ab[1]
+            k = (r + aw * 0.35) * 0.707  # centre de l'astérisque posé contre le bord du cercle, à 45° en haut à droite
+            d.text((ccx + k - aw / 2 - ab[0], ccy - k - ah / 2 - ab[1]), '*', font=fa, fill=BROWN)
         elif k == 'extra':
             d.ellipse((bx, by, bx + D, by + D), fill='white', outline=GREEN, width=3 * SS)
             lines = sp['extra']; fsz = int(D * 0.19)
