@@ -1,5 +1,5 @@
 # Hero A+ 970x600, charte figée le 16/11/2026 (validée par Nathan) : photo lifestyle Drive INTACTE (recadrage + réduction seulement) à droite,
-# panneau crème à bord net (droit en haut, ondulé ensuite), police Fredoka, titre + sous-titre + badges centrés dans le panneau,
+# panneau crème à bord net (droit en haut, ondulé ensuite), police Fredoka, titre + sous-titre + badges alignés à gauche dans le panneau, note Anti-UV en bas à gauche,
 # badges TOUJOURS à la même taille (BADGE), logos officiels collés tels quels, pastille produit en haut à droite.
 # Usage : python3 tools/hero_life.py <spec.json>
 # spec : {"photo":"life.jpg","out":"hero.jpg","scale":0.47,"ox":null,"oy":-5,"title":["l1","l2"],"sub":["l1","l2"],
@@ -14,6 +14,7 @@ from aplus import F
 SS = 3; W, H = 970, 600
 CREAM = (253, 240, 221); BROWN = (58, 22, 14); GREEN = (46, 85, 65); RED = (232, 66, 70)  # GREEN = vert des bandeaux #2E5541
 LOGOS = os.path.join(os.path.dirname(__file__), 'assets', 'logos')
+LX = 30;  # marge gauche : titre, sous-titre, badges et note alignés à gauche
 CX = 200; GAP = 14; BADGE = 82; TSIZE = 50; EDGE = [412, 412, 386, 420, 380, 356]
 
 def ctext(d, cx, y, t, f, fill):
@@ -53,10 +54,11 @@ def main(sp_path):
     th = len(sp['title']) * ts * 1.16; sh = len(sp['sub']) * ss_ * 1.32
     free = H - 120 - (th + sh + Dp + nh); g1 = min(44, free * 0.4); g2 = min(64, free * 0.6)
     y = (60 + (free - g1 - g2) / 2) * SS
-    for ln in sp['title']: ctext(d, cx, y, ln, F(ts * SS, 700), BROWN); y += ts * 1.16 * SS
+    lx = LX * SS
+    for ln in sp['title']: d.text((lx, y), ln, font=F(ts * SS, 700), fill=BROWN); y += ts * 1.16 * SS
     y += g1 * SS
-    for ln in sp['sub']: ctext(d, cx, y, ln, F(ss_ * SS, 600), GREEN); y += ss_ * 1.32 * SS
-    D = Dp * SS; by = int(y + g2 * SS); tw = sum(rel(k) for k in items) * D + GAP * SS * (len(items) - 1); bx = int(cx - tw / 2)
+    for ln in sp['sub']: d.text((lx, y), ln, font=F(ss_ * SS, 600), fill=GREEN); y += ss_ * 1.32 * SS
+    D = Dp * SS; by = int(y + g2 * SS); tw = sum(rel(k) for k in items) * D + GAP * SS * (len(items) - 1); bx = lx
     for k in items:
         if k == 'age':
             d.ellipse((bx, by, bx + D, by + D), fill=RED)
@@ -86,13 +88,13 @@ def main(sp_path):
         bx += int(rel(k) * D) + GAP * SS
     if note:
         nt = '* ' + sp.get('uv_note', "Résistance équivalente à 3 ans (Dégradation max 3 sur 5 sur l'échelle des gris. Norme D15 1343)")
-        fn = F(12 * SS, 600); lines, cur = [], ''
+        fn = F(12 * SS, 400); lines, cur = [], ''  # note Anti-UV : pas en gras, en bas à gauche de la bannière
         for w_ in nt.split():
             t_ = (cur + ' ' + w_).strip()
             if d.textlength(t_, font=fn) > 320 * SS and cur: lines.append(cur); cur = w_
             else: cur = t_
-        lines.append(cur); y2 = by + D + 10 * SS
-        for ln in lines: ctext(d, cx, y2, ln, fn, BROWN); y2 += 16 * SS
+        lines.append(cur); y2 = (H - 12 - 16 * len(lines)) * SS
+        for ln in lines: d.text((lx, y2), ln, font=fn, fill=BROWN); y2 += 16 * SS
     pf = F(26 * SS, 700); bb = d.textbbox((0, 0), sp['pill'], font=pf); pw = bb[2] - bb[0] + 40 * SS; ph_ = 48 * SS
     px = (W - 14) * SS - pw; py = 16 * SS
     d.rounded_rectangle((px, py, px + pw, py + ph_), radius=ph_ // 2, fill=GREEN, outline='white', width=3 * SS)
